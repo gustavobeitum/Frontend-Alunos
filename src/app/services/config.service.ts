@@ -7,8 +7,9 @@ export class ConfigService {
   private apiUrl!: string;
 
   loadConfig(): void {
-    const ip = window.location.hostname;
-    this.apiUrl = `http://${ip}:8080`;
+    // const ip = window.location.hostname;
+    // this.apiUrl = `http://${ip}:8080`;
+    this.apiUrl = `http://172.100.123.146:8080`;
 
     console.log('API configurada:', this.apiUrl);
   }
